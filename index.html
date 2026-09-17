@@ -1,325 +1,331 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Xinyu Huang (黄新宇)</title>
-  
   <meta name="author" content="Xinyu Huang">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐠</text></svg>">
+  <meta name="description"
+    content="Xinyu Huang is a researcher at ByteDance Seed, working on multimodal generation. He previously created the Recognize Anything Model (RAM) family.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Xinyu Huang (黄新宇)">
+  <meta property="og:description"
+    content="Researcher at ByteDance Seed, working on multimodal generation. Creator of the Recognize Anything Model (RAM) family.">
+  <meta property="og:url" content="https://xinyu1205.github.io/">
+  <meta property="og:image" content="https://xinyu1205.github.io/images/huangxinyu.jpg">
+  <meta name="twitter:card" content="summary">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐠</text></svg>">
+
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = saved || (prefersDark ? 'dark' : 'light');
+    })();
+  </script>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <p style="text-align:center">
-                  <name>Xinyu Huang (黄新宇)</name>
-                </p>
-                <p>
-                  I am a researcher at <a href="https://seed.bytedance.com/en/">ByteDance Seed</a>, working at unified multimodal model. Before that, I obtained Ph.D degree from Fudan University</a>, advised by Prof. <a href="https://faculty.fudan.edu.cn/fengrui/zh_CN/index.htm">Rui Feng</a>. I was also a vistor in MMLab, Nanyang Technological University, advised by Prof. <a href="https://liuziwei7.github.io/">Ziwei Liu</a>. </p>
-                <p>
-                  From 2020 to 2024, I researched on visual perception and created the <a href="https://github.com/xinyu1205/recognize-anything" style="color: red;">Recognize Anything Model (RAM) Family</a>: a series of open-source and powerful image perception models that exceed OpenAI's CLIP by more than 20 points in fine-grained perception. This work was done at OPPO Research Institute & IDEA, where I was fortunate to collaborate with <a href="https://scholar.google.com/citations?user=j5idDP8AAAAJ&hl=zh-CN&oi=ao">Youcai Zhang</a>, Prof. <a href="https://scholar.google.com/citations?user=fWDoWsQAAAAJ&hl=zh-CN&oi=ao">Yandong Guo</a>, and Prof. <a href="https://www.leizhang.org/">Lei Zhang</a>.
-                </p>
-                <p>
-                  From 2024 to 2025, I co-leader the full process construction (Pretrain, SFT, <a href="https://arxiv.org/abs/2507.05920">RL</a>) of large multimodal models at TikTok AI Innovation Center, which achieve or exceed Qwen2.5-VL on 30+ benchmarks. During this period, I was fortunate to work closely with <a href="https://brianboli.com/">Bo Li</a>, <a href="https://scholar.google.com/citations?user=q8ZrKVIAAAAJ&hl=zh-CN&oi=ao">Wei Li</a>, and <a href="https://scholar.google.com/citations?hl=zh-CN&user=XwY9LXoAAAAJ">Zejun Ma</a>.
-                </p>
-              <p style="text-align:center">
-                <a href="mailto:xinyuhuang20@fudan.edu.cn">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=1O5b3VcAAAAJ&hl=zh-CN&oi=ao">Scholar</a>
-                &nbsp/&nbsp
-                <a href="https://github.com/xinyu1205">Github</a> &nbsp/&nbsp
-                <a href="https://www.zhihu.com/people/xin-yu-77-88-42">Zhihu</a>
-              </p>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/huangxinyu.jpg"><img style="width:80%;max-width:80" alt="profile photo"
-                  src="images/huangxinyu.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
+  <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle dark mode">
+    <span class="icon-light" aria-hidden="true">☾</span>
+    <span class="icon-dark" aria-hidden="true">☀</span>
+  </button>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-              <td style="padding:20px;width:25%;vertical-align:middle">
-                <!-- <heading>Research</heading>(* indicates equal contribution) -->
-                <heading>Research</heading> (* indicates equal contribution)
+  <main>
 
-          </td>
-            </tr>
-        </tbody></table>
-        <style>
-          img {
-            border-radius: 15px;
-          }
-        </style>
-        
+    <header class="hero">
+      <div>
+        <h1 class="hero__name">Xinyu Huang (黄新宇)</h1>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+        <p>
+          I am a researcher at <a href="https://seed.bytedance.com/en/">ByteDance Seed</a>, working on multimodal
+          generation.
+        </p>
+        <p>
+          I obtained my Ph.D. from Fudan University, advised by Prof.
+          <a href="https://faculty.fudan.edu.cn/fengrui/zh_CN/index.htm">Rui Feng</a>. I was also a visiting student at
+          MMLab, Nanyang Technological University, advised by Prof.
+          <a href="https://liuziwei7.github.io/">Ziwei Liu</a>.
+        </p>
+        <p>
+          From 2020 to 2024, I worked on visual perception and created the
+          <a href="https://github.com/xinyu1205/recognize-anything">Recognize Anything Model (RAM) family</a>, a series
+          of open-source image perception models that exceed OpenAI's CLIP by more than 20 points in fine-grained
+          perception. This work was done at OPPO Research Institute and IDEA, together with
+          <a href="https://scholar.google.com/citations?user=j5idDP8AAAAJ&hl=zh-CN&oi=ao">Youcai Zhang</a>, Prof.
+          <a href="https://scholar.google.com/citations?user=fWDoWsQAAAAJ&hl=zh-CN&oi=ao">Yandong Guo</a>, and Prof.
+          <a href="https://www.leizhang.org/">Lei Zhang</a>.
+        </p>
+        <p>
+          From 2024 to 2025, I co-led the development (pre-training, SFT, and
+          <a href="https://arxiv.org/abs/2507.05920">RL</a>) of large multimodal models at TikTok AI Innovation Center.
+        </p>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="https://raw.githubusercontent.com/xinyu1205/MGPO/main/images/3.png" alt="tag2text" width="190" height="110">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2507.05920/">
-                <papertitle> Multi-Turn Grounding-Based RL (MGPO) </papertitle>
-              </a>
-              <papertitle> <br>High-Resolution Visual Reasoning via Multi-Turn Grounding-Based Reinforcement Learning </papertitle>
-              <br>
-              <strong>Xinyu Huang</strong>, Yuhao Dong, Wei Li, Jinming Wu, Zihao Deng, Weiwei Tian, Bo Li, Rui Feng, Zejun Ma, Ziwei Liu
-              <br>
-              <em>Arxiv</em>,
-              2025
-              <br>
-              <!-- <a href="https://recognize-anything.github.io/">project page</a> -->
-              
-              <a href="https://arxiv.org/abs/2507.05920">arXiv</a>
-              /
-              <!-- <a href="https://huggingface.co/spaces/xinyu1205/Tag2Text">demo</a> -->
-            
-              <a href="https://github.com/EvolvingLMMs-Lab/MGPO">code</a>
-              <p></p>
-              <p>MGPO enables LMMs to iteratively focus on key image regions through automatic grounding, achieving superior performance on high-resolution visual tasks without requiring grounding annotations. </p>
-            </td>
-          </tr>
+        <ul class="links">
+          <li><a href="mailto:xinyuhuang20@fudan.edu.cn">Email</a></li>
+          <li><a href="https://scholar.google.com/citations?user=1O5b3VcAAAAJ&hl=zh-CN&oi=ao">Google Scholar</a></li>
+          <li><a href="https://github.com/xinyu1205">GitHub</a></li>
+          <li><a href="https://www.zhihu.com/people/xin-yu-77-88-42">Zhihu</a></li>
+        </ul>
+      </div>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/ram_plus_compare.jpg" alt="tag2text" width="190" height="110">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2310.15200">
-                <papertitle> Recognize Anything Plus Model (RAM++) </papertitle>
-              </a>
-              <papertitle> <br>Open-Set Image Tagging with Multi-Grained Text Supervision </papertitle>
-              <br>
-              <strong>Xinyu Huang</strong>, Yi-Jie Huang, Youcai Zhang, Weiwei Tian, Rui Feng, Yuejie Zhang, Yanchun Xie, Yaqian Li, Lei Zhang
-              <br>
-              <em>Arxiv</em>,
-              2023
-              <br>
-              <!-- <a href="https://recognize-anything.github.io/">project page</a> -->
-              
-              <a href="https://arxiv.org/abs/2306.03514">arXiv</a>
-              /
-              <!-- <a href="https://huggingface.co/spaces/xinyu1205/Tag2Text">demo</a> -->
-              
-              <a href="https://github.com/xinyu1205/Recognize_Anything-Tag2Text">code</a>
-              <p></p>
-              <p>RAM++ is the next generation of RAM, which can <strong>recognize any category with high accuracy</strong>, including <strong>both predefined common categories and diverse open-set categories</strong>.    </p>
-            </td>
-          </tr>
+      <div class="hero__photo">
+        <img src="images/huangxinyu.jpg" alt="Xinyu Huang" width="200" height="200">
+      </div>
+    </header>
 
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/localization_and_recognition.jpg" alt="tag2text" width="190" height="110">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://recognize-anything.github.io/">
-                <papertitle> Recognize Anything Model (RAM) </papertitle>
-              </a>
-              <papertitle> <br>Recognize Anything: A Strong Image Tagging Model </papertitle>
-              <br>
-              Youcai Zhang*,
-              <strong>Xinyu Huang*</strong>,
-              Jinyu Ma*, Zhaoyang Li*, Zhaochuan Luo, Yanchun Xie, Yuzhuo Qin, Tong Luo, Yaqian Li, Shilong Liu, Yandong Guo, Lei Zhang
-              <br>
-              <strong><em>CVPR 2024, Multimodal Foundation Models Workshop</em></strong>
-              <br>
-              <a href="https://recognize-anything.github.io/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2306.03514">arXiv</a>
-              /
-              <a href="https://huggingface.co/spaces/xinyu1205/Tag2Text">demo</a>
-              /
-              <a href="https://github.com/xinyu1205/Recognize_Anything-Tag2Text">code</a>
-              <p></p>
-              <p>RAM is an image tagging model, which can <strong>recognize any common category with high accuracy</strong>.    </p>
-            </td>
-          </tr>
+    <section class="section">
+      <h2 class="section__title">Research &amp; Work</h2>
 
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/tag2text.png" alt="tag2text" width="190" height="110">
-            </td>
-            <td width="75%" valign="middle">
-              <a href="https://tag2text.github.io/">
-                <papertitle> Tag2Text Vision-Language Model </papertitle>
-              </a>
-              <papertitle> <br>Tag2Text: Guiding Vision-Language Model via Image Tagging </papertitle>
-              <br>
-              <strong>Xinyu Huang</strong>,
-              Youcai Zhang,
-              Jinyu Ma,
-              Weiwei Tian,
-              Rui Feng,
-              Yuejie Zhang,
-              Yaqian Li,
-              Yandong Guo,
-              Lei Zhang
-              <br>
-              <strong><em>ICLR 2024</em></strong>
-              <br>
-              <a href="https://tag2text.github.io/">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2303.05657">arXiv</a>
-              /
-              <a href="https://huggingface.co/spaces/xinyu1205/Tag2Text">demo</a>
-              /
-              <a href="https://github.com/xinyu1205/Tag2Text">code</a>
-              <p></p>
-              <p>Tag2Text is a vision-language model guided by tagging, which can <strong>support tagging and comprehensive captioning simultaneously</strong>.              </p>
-            </td>
-          </tr>
-
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/idea.png" alt="idea" width="190" height="140">
-            </td>
-            <td width="75%" valign="middle">
-              <!-- <a href="https://arxiv.org/abs/2207.05333"> -->
-                <papertitle> IDEA: Increasing Text Diversity via Online Multi-Label Recognition for Vision-Language Pre-training </papertitle>
-              <!-- </a> -->
-              <br>
-              <strong>Xinyu Huang</strong>,
-              Youcai Zhang,
-              Ying Cheng,
-              Weiwei Tian,
-              Ruiwei Zhao,
-              Rui Feng,
-              Yuejie Zhang,
-              Yaqian Li,
-              Yandong Guo,
-              Xiaobo Zhang
-              <br>
-              <em>ACM MM</em>,
-              2022
-              <br>
-              <a href="https://arxiv.org/abs/2207.05333">arXiv</a>
-              /
-              <a href="https://github.com/xinyu1205/IDEA-pytorch">code</a>
-              <p>
-                We propose IDEA to provide more explicit textual supervision (including multiple valuable tags and texts composed by multiple tags) for visual models.
-              </p>
-            </td>
-          </tr>
-
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="images/mlml.png" alt="mlml" width="190" height="100">
-            </td>
-            <td width="75%" valign="middle">
-              <!-- <a href="https://arxiv.org/abs/2112.07368"> -->
-                <papertitle>Simple and Robust Loss Design for Multi-Label Learning with Missing Labels</papertitle>
-              <!-- </a> -->
-              <br>
-              Youcai Zhang*,
-              Yuhao Cheng*,
-              <strong>Xinyu Huang*</strong>,
-              Fei Wen,
-              Rui Feng,
-              Yaqian Li,
-              Yandong Guo
-              <br>
-              <em>Arxiv</em>,
-              2021
-              <br>
-              <a href="https://arxiv.org/abs/2112.07368">arXiv</a>
-              /
-              <a href="https://github.com/xinyu1205/robust-loss-mlml">code</a>
-              <p>
-                Multi-label learning in the presence of missing labels(MLML) is a challenging problem. We propose two simple yet effective methods via robust loss design based on an observation. 
-              </p>
-            </td>
-          </tr>
-
-
-    </tbody></table>
-
-
-    <table
-    style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Projects & Resources</heading>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <img src="images/tagging_results.jpg" alt="tag2text" width="190" height="110">
-      </td>
-      <td width="75%" valign="middle">
-        <a href="https://github.com/xinyu1205/recognize-anything">
-          <papertitle> Recognize Anything Family</papertitle>
-        </a>
-        <br>
-        <strong>Project Creator/Owner</strong>
-        <br>
-        <span style="color: red;">3.2K+ stars! </span>
-        <p></p>
-        <p>We provide <strong>Recognize Anything Model Family (RAM)</strong> demonstrating <strong>superior image recognition ability!</strong> </p>
-      </td>
-    </tr>
-
-
-  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr>
-      <td style="padding:20px;width:25%;vertical-align:middle">
-        <img src="images/tag2text_grounded_cam.png" alt="tag2text" width="190" height="110">
-      </td>
-      <td width="75%" valign="middle">
-        <a href="https://github.com/IDEA-Research/Grounded-Segment-Anything">
-          <papertitle> RAM-Grounded-SAM </papertitle>
-        </a>
-        <br>
-        <strong>Project Co-Leader</strong>
-        <br>
-        <span style="color: red;">16.3K+ stars! </span>
-        <p></p>
-        <p><strong>RAM Faimly marry Grounded-SAM</strong>, which can <strong>automatically recognize, detect, and segment</strong> for an image! RAM Family showcases <strong>powerful image recognition capabilities!</strong> </p>
-      </td>
-    </tr>
-
-
-
-
-</tbody></table>
-
-    <table
-    style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-      <tr>
-        <td style="padding:20px;width:100%;vertical-align:middle">
-          <heading>Reviewer</heading>
-        </td>
-      </tr>
-      <tr>
-        <td style="padding:0px 20px 20px 20px;width:100%;vertical-align:middle">
-          <p>
-            CVPR, ICCV, ECCV, ICLR, NeurIPS, IJCV, WACV, ACMMM, etc.
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://seed.bytedance.com/en/seedream5_0_pro"><img src="images/seedream5_pro.jpg"
+              alt="Seedream 5.0 Pro" loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://seed.bytedance.com/en/seedream5_0_pro">Seedream 5.0 Pro</a>
+          </h3>
+          <p class="entry__authors">Core Author</p>
+          <span class="entry__venue">ByteDance Seed, 2026</span>
+          <p class="entry__links">
+            <a href="https://seed.bytedance.com/en/seedream5_0_pro">project page</a> /
+            <a
+              href="https://seed.bytedance.com/en/blog/beyond-generation-it-understands-design-introducing-seedream-5-0-pro">tech
+              blog</a>
           </p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+          <p class="entry__desc">
+            Seedream 5.0 Pro is a multimodal image creation model that <strong>reasons before it draws</strong>. It
+            plans logical layouts for text-dense infographics, grounds point, lasso, sketch, and color signals for
+            pixel-level interactive editing, decomposes an image into 10+ editable transparent layers, and natively
+            renders text in over ten languages.
+          </p>
+        </div>
+      </article>
 
-			
-      </td>
-    </tr>
-  </table>
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://arxiv.org/abs/2507.05920"><img src="images/mgpo.jpg" alt="MGPO" loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://arxiv.org/abs/2507.05920">Multi-Turn Grounding-Based RL (MGPO)</a>
+          </h3>
+          <p class="entry__subtitle">High-Resolution Visual Reasoning via Multi-Turn Grounding-Based Reinforcement
+            Learning</p>
+          <p class="entry__authors">
+            <strong>Xinyu Huang</strong>, Yuhao Dong, Wei Li, Jinming Wu, Zihao Deng, Weiwei Tian, Bo Li, Rui Feng,
+            Zejun Ma, Ziwei Liu
+          </p>
+          <span class="entry__venue">arXiv 2025</span>
+          <p class="entry__links">
+            <a href="https://arxiv.org/abs/2507.05920">arXiv</a> /
+            <a href="https://github.com/EvolvingLMMs-Lab/MGPO">code</a>
+          </p>
+          <p class="entry__desc">
+            MGPO lets LMMs iteratively focus on key image regions through automatic grounding, achieving superior
+            performance on high-resolution visual tasks without any grounding annotations.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://arxiv.org/abs/2310.15200"><img src="images/ram_plus_compare.jpg" alt="RAM++"
+              loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://arxiv.org/abs/2310.15200">Recognize Anything Plus Model (RAM++)</a>
+          </h3>
+          <p class="entry__subtitle">Open-Set Image Tagging with Multi-Grained Text Supervision</p>
+          <p class="entry__authors">
+            <strong>Xinyu Huang</strong>, Yi-Jie Huang, Youcai Zhang, Weiwei Tian, Rui Feng, Yuejie Zhang, Yanchun Xie,
+            Yaqian Li, Lei Zhang
+          </p>
+          <span class="entry__venue">arXiv 2023</span>
+          <p class="entry__links">
+            <a href="https://arxiv.org/abs/2310.15200">arXiv</a> /
+            <a href="https://github.com/xinyu1205/Recognize_Anything-Tag2Text">code</a>
+          </p>
+          <p class="entry__desc">
+            RAM++ is the next generation of RAM, which <strong>recognizes any category with high accuracy</strong>,
+            covering both predefined common categories and diverse open-set categories.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://recognize-anything.github.io/"><img src="images/localization_and_recognition.jpg" alt="RAM"
+              loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://recognize-anything.github.io/">Recognize Anything Model (RAM)</a>
+          </h3>
+          <p class="entry__subtitle">Recognize Anything: A Strong Image Tagging Model</p>
+          <p class="entry__authors">
+            Youcai Zhang*, <strong>Xinyu Huang*</strong>, Jinyu Ma*, Zhaoyang Li*, Zhaochuan Luo, Yanchun Xie, Yuzhuo
+            Qin, Tong Luo, Yaqian Li, Shilong Liu, Yandong Guo, Lei Zhang
+          </p>
+          <span class="entry__venue">CVPR 2024 Workshop on Multimodal Foundation Models</span>
+          <p class="entry__links">
+            <a href="https://recognize-anything.github.io/">project page</a> /
+            <a href="https://arxiv.org/abs/2306.03514">arXiv</a> /
+            <a href="https://huggingface.co/spaces/xinyu1205/Tag2Text">demo</a> /
+            <a href="https://github.com/xinyu1205/Recognize_Anything-Tag2Text">code</a>
+          </p>
+          <p class="entry__desc">
+            RAM is an image tagging model that <strong>recognizes any common category with high accuracy</strong>.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://tag2text.github.io/"><img src="images/tag2text.png" alt="Tag2Text" loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://tag2text.github.io/">Tag2Text Vision-Language Model</a>
+          </h3>
+          <p class="entry__subtitle">Tag2Text: Guiding Vision-Language Model via Image Tagging</p>
+          <p class="entry__authors">
+            <strong>Xinyu Huang</strong>, Youcai Zhang, Jinyu Ma, Weiwei Tian, Rui Feng, Yuejie Zhang, Yaqian Li,
+            Yandong Guo, Lei Zhang
+          </p>
+          <span class="entry__venue">ICLR 2024</span>
+          <p class="entry__links">
+            <a href="https://tag2text.github.io/">project page</a> /
+            <a href="https://arxiv.org/abs/2303.05657">arXiv</a> /
+            <a href="https://huggingface.co/spaces/xinyu1205/Tag2Text">demo</a> /
+            <a href="https://github.com/xinyu1205/Tag2Text">code</a>
+          </p>
+          <p class="entry__desc">
+            Tag2Text is a vision-language model guided by tagging, which <strong>supports tagging and comprehensive
+              captioning simultaneously</strong>.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://arxiv.org/abs/2207.05333"><img src="images/idea.jpg" alt="IDEA" loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://arxiv.org/abs/2207.05333">IDEA</a>
+          </h3>
+          <p class="entry__subtitle">Increasing Text Diversity via Online Multi-Label Recognition for Vision-Language
+            Pre-training</p>
+          <p class="entry__authors">
+            <strong>Xinyu Huang</strong>, Youcai Zhang, Ying Cheng, Weiwei Tian, Ruiwei Zhao, Rui Feng, Yuejie Zhang,
+            Yaqian Li, Yandong Guo, Xiaobo Zhang
+          </p>
+          <span class="entry__venue">ACM MM 2022</span>
+          <p class="entry__links">
+            <a href="https://arxiv.org/abs/2207.05333">arXiv</a> /
+            <a href="https://github.com/xinyu1205/IDEA-pytorch">code</a>
+          </p>
+          <p class="entry__desc">
+            IDEA provides more explicit textual supervision for visual models, including valuable tags and texts
+            composed of multiple tags.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://arxiv.org/abs/2112.07368"><img src="images/mlml.jpg" alt="Robust loss for MLML"
+              loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://arxiv.org/abs/2112.07368">Simple and Robust Loss Design for Multi-Label Learning with
+              Missing Labels</a>
+          </h3>
+          <p class="entry__authors">
+            Youcai Zhang*, Yuhao Cheng*, <strong>Xinyu Huang*</strong>, Fei Wen, Rui Feng, Yaqian Li, Yandong Guo
+          </p>
+          <span class="entry__venue">arXiv 2021</span>
+          <p class="entry__links">
+            <a href="https://arxiv.org/abs/2112.07368">arXiv</a> /
+            <a href="https://github.com/xinyu1205/robust-loss-mlml">code</a>
+          </p>
+          <p class="entry__desc">
+            Multi-label learning with missing labels (MLML) is a challenging problem. We propose two simple yet
+            effective methods via robust loss design.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Open-Source Projects</h2>
+
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://github.com/xinyu1205/recognize-anything"><img src="images/tagging_results.jpg"
+              alt="Recognize Anything family" loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://github.com/xinyu1205/recognize-anything">Recognize Anything Family</a>
+          </h3>
+          <p class="entry__authors">Project Creator and Owner &middot; <span class="star-badge">3.7K+ stars</span></p>
+          <p class="entry__desc">
+            The <strong>Recognize Anything Model (RAM) family</strong>, demonstrating superior image recognition
+            ability across common and open-set categories.
+          </p>
+        </div>
+      </article>
+
+      <article class="entry">
+        <div class="entry__media">
+          <a href="https://github.com/IDEA-Research/Grounded-Segment-Anything"><img
+              src="images/tag2text_grounded_cam.jpg" alt="RAM-Grounded-SAM" loading="lazy"></a>
+        </div>
+        <div>
+          <h3 class="entry__title">
+            <a href="https://github.com/IDEA-Research/Grounded-Segment-Anything">RAM-Grounded-SAM</a>
+          </h3>
+          <p class="entry__authors">Project Co-Leader &middot; <span class="star-badge">17.7K+ stars</span></p>
+          <p class="entry__desc">
+            The <strong>RAM family married with Grounded-SAM</strong>, which can
+            <strong>automatically recognize, detect, and segment</strong> anything in an image.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="section">
+      <h2 class="section__title">Academic Service</h2>
+      <p>Reviewer for CVPR, ICCV, ECCV, ICLR, NeurIPS, IJCV, WACV, and ACM MM.</p>
+    </section>
+
+    <footer class="footer">
+      <p>Last updated September 2026. Template adapted from <a href="https://jonbarron.info/">Jon Barron</a>.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    document.getElementById('themeToggle').addEventListener('click', function () {
+      var next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = next;
+      localStorage.setItem('theme', next);
+    });
+  </script>
 </body>
 
 </html>
